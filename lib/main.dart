@@ -20,7 +20,11 @@ Future fetchData() async {
   bool data = false;
 
   await Future.delayed(const Duration(seconds: 3), () {
+<<<<<<< Updated upstream
     data = false;
+=======
+    data = true;
+>>>>>>> Stashed changes
   });
 
   return data;
