@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:todolist_flutter/screens/login_screen.dart';
 
 /// Flutter code sample for [PageView].
 
@@ -13,30 +14,26 @@ Future main() async {
     await closedChannel.invokeMethod('close');
   }
 
-  runApp(const PageViewExampleApp());
+  runApp(const _App());
 }
 
 Future fetchData() async {
   bool data = false;
 
   await Future.delayed(const Duration(seconds: 3), () {
-<<<<<<< Updated upstream
-    data = false;
-=======
     data = true;
->>>>>>> Stashed changes
   });
 
   return data;
 }
 
-class PageViewExampleApp extends StatelessWidget {
-  const PageViewExampleApp({super.key});
+class _App extends StatelessWidget {
+  const _App();
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(),
+      home: LoginScreen(),
     );
   }
 }
