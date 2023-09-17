@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:todolist_flutter/screens/login_screen.dart';
 
-/// Flutter code sample for [PageView].
-
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   bool data = await fetchData();
